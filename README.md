@@ -7,3 +7,5 @@ demo启动注意事项
 3.启动三个tomcat，注意端口号和jmx端口号
 
 4.启动顺序，dubbo-admin，provide，consumer
+
+5.通过控制台输出查看rpc服务调用成功
