@@ -1,0 +1,37 @@
+2017-06-02 19:58:17,784 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: ./../conf/zoo.cfg
+2017-06-02 19:58:17,786 - WARN  [main:QuorumPeerMain@105] - Either no config or no quorum defined in config, running  in standalone mode
+2017-06-02 19:58:17,802 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: ./../conf/zoo.cfg
+2017-06-02 19:58:17,803 - INFO  [main:ZooKeeperServerMain@94] - Starting server
+2017-06-02 19:58:17,814 - INFO  [main:Environment@97] - Server environment:zookeeper.version=3.3.6-1366786, built on 07/29/2012 06:22 GMT
+2017-06-02 19:58:17,814 - INFO  [main:Environment@97] - Server environment:host.name=192.168.1.8
+2017-06-02 19:58:17,815 - INFO  [main:Environment@97] - Server environment:java.version=1.7.0_80
+2017-06-02 19:58:17,815 - INFO  [main:Environment@97] - Server environment:java.vendor=Oracle Corporation
+2017-06-02 19:58:17,815 - INFO  [main:Environment@97] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+2017-06-02 19:58:17,816 - INFO  [main:Environment@97] - Server environment:java.class.path=./../build/classes:./../build/lib/*.jar:./../zookeeper-3.3.6.jar:./../lib/log4j-1.2.15.jar:./../lib/jline-0.9.94.jar:./../src/java/lib/*.jar:./../conf:
+2017-06-02 19:58:17,816 - INFO  [main:Environment@97] - Server environment:java.library.path=/Users/jiamin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2017-06-02 19:58:17,816 - INFO  [main:Environment@97] - Server environment:java.io.tmpdir=/var/folders/92/jq65yq0d5kdgzvs9r1c968800000gn/T/
+2017-06-02 19:58:17,816 - INFO  [main:Environment@97] - Server environment:java.compiler=<NA>
+2017-06-02 19:58:17,817 - INFO  [main:Environment@97] - Server environment:os.name=Mac OS X
+2017-06-02 19:58:17,817 - INFO  [main:Environment@97] - Server environment:os.arch=x86_64
+2017-06-02 19:58:17,817 - INFO  [main:Environment@97] - Server environment:os.version=10.12.5
+2017-06-02 19:58:17,818 - INFO  [main:Environment@97] - Server environment:user.name=jiamin
+2017-06-02 19:58:17,818 - INFO  [main:Environment@97] - Server environment:user.home=/Users/jiamin
+2017-06-02 19:58:17,818 - INFO  [main:Environment@97] - Server environment:user.dir=/Users/jiamin/Documents/studyDubbo/zookeeper-3.3.6/bin
+2017-06-02 19:58:17,828 - INFO  [main:ZooKeeperServer@673] - tickTime set to 2000
+2017-06-02 19:58:17,828 - INFO  [main:ZooKeeperServer@682] - minSessionTimeout set to -1
+2017-06-02 19:58:17,828 - INFO  [main:ZooKeeperServer@691] - maxSessionTimeout set to -1
+2017-06-02 19:58:17,851 - INFO  [main:NIOServerCnxn$Factory@143] - binding to port 0.0.0.0/0.0.0.0:2181
+2017-06-02 19:58:17,852 - FATAL [main:ZooKeeperServerMain@62] - Unexpected exception, exiting abnormally
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:463)
+	at sun.nio.ch.Net.bind(Net.java:455)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67)
+	at org.apache.zookeeper.server.NIOServerCnxn$Factory.<init>(NIOServerCnxn.java:144)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:108)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:85)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.main(ZooKeeperServerMain.java:51)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:108)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:76)
